@@ -1,0 +1,12 @@
+<div
+  *ngIf="{
+    isCreateTaskFormActive: isCreateTaskFormActive$ | async
+  } as viewData"
+>
+  <div [className]="'task-cards-wrapper'">
+    <create-task-card *ngIf="viewData?.isCreateTaskFormActive" />
+<!-- <ng-container *ngFor=""> -->
+
+<!-- </ng-container> -->
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div [className]="'task-card-wrapper'">
+  <div [className]="'task-card-header'">
+    <span [className]="'card-title'">{{ title }}</span>
+    <span>Created at: {{ dateString }}</span>
+  </div>
+  <div [className]="'task-card-content'">
+    {{ description }}
+  </div>
+  <div [className]="'task-card-footer'">
+    <button mat-icon-button matTooltip="Basic" aria-label="Add new task" matTooltip="Warn" color="warn">
+      <mat-icon>delete_forever</mat-icon>
+    </button>
+    <button mat-icon-button matTooltip="Basic" aria-label="Add new task" matTooltip='Primary' color="primary">
+      <mat-icon>edit</mat-icon>
+    </button>
+  </div>
+</div>
