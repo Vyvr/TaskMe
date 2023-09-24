@@ -1,0 +1,29 @@
+<form [formGroup]="createTaskFormGroup" (ngSubmit)="createTask()">
+  <div [className]="'create-task-card-wrapper'">
+    <div [className]="'create-task-card-header'">
+      <input
+        [className]="'create-card-title'"
+        formControlName="title"
+        placeholder="Enter your title!"
+        type="text"
+      />
+    </div>
+    <textarea
+      [className]="'create-task-card-content'"
+      formControlName="description"
+      placeholder="Enter description!"
+      type="text"
+    ></textarea>
+
+    <div [className]="'create-task-card-footer'">
+      <button
+        type="submit"
+        mat-raised-button
+        aria-label="Add new task"
+        color="primary"
+      >
+        Create task!
+      </button>
+    </div>
+  </div>
+</form>
